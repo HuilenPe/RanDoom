@@ -18,7 +18,7 @@
 
 <h2 align="center" class="url">URL</h2>
 
-<img  src="./Apps/link.jpg"> https://huilenpe.github.io/RanDoom/
+<img  src=".assets/link.png" width=20> https://huilenpe.github.io/RanDoom/
 
 <h2 align="center" class="autores">Autores</h2>
 
