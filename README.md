@@ -1,4 +1,4 @@
-<img  src="./assets/readme_img2.png">
+<img  src="./assets/readme_img.png">
 
 ## Indice 
 
