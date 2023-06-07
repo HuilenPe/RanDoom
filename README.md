@@ -1,5 +1,5 @@
 <img  src="./assets/readme/readme_img.png">
-<h1 font-size=18px font-family=Yeseva One, cursive; >Random recipes one click away!</h1>
+<h1 align="center" font-size=20px>Random recipes one click away!</h1>
 
 
 ## Indice 
@@ -35,18 +35,16 @@ En resumen, Random es una página web interactiva que presenta un listado de com
 <br>
 <h2 align="center" class="url">URL</h2>
 <br>
-https://huilenpe.github.io/RanDoom/
+<p align="center">https://huilenpe.github.io/RanDoom/</p>
 <br>
 <h2 align="center" class="autores">Autores</h2>
 <br>
-<!-- |[<img src="https://avatars.githubusercontent.com/u/125603610?v=4" width=115><br><sub>Jesus Fajardo</sub>](https://github.com/JFCTito)|[<img src="https://avatars.githubusercontent.com/u/131254707?v=4"width=115><br><sub>Ariel Paricio</sub>](https://github.com/Arielparicio28)| [<img src="https://avatars.githubusercontent.com/u/131238839?v=4" width=115><br><sub>Huilen Peña</sub>](https://github.com/HuilenPe) | [<img src="https://avatars.githubusercontent.com/u/122879094?v=4" width=115><br><sub>Federico Martino</sub>](https://github.com/Federicojaviermartino) | [<img src="" width=115><br><sub>Trinidad Diez</sub>] (https://github.com/trinitytenrabbit) |
-| :---: | :---: | :---: | :---: | -->
-
+<p align="center"><img  src="./assets/readme/team.png"></p>
+<br>
 <h2 align="center" class="presentacion">Presentación</h2
 
  [Presentación del proyecto](https://docs.google.com/presentation/d/1gP7s4HxYT8FHZFldJX68DcYnLeX7yIheRLu7BIb8HPU/edit?usp=sharing)
 <br>
 <br>
 <br>
-
-<img  src="./assets/readme/readme_img2.png">
+<p align="center"><img  src="./assets/readme/readme_img2.png"></p>
