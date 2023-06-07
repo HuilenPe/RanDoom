@@ -1,0 +1,34 @@
+/*about us*/
+.about-us {
+    overflow: hidden;
+}
+
+.about-us h1{
+    font-size: 6vh;
+    color: var(--black);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-us p{
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+
+@media (min-width:800px){
+    .about-us {
+        display: flex;  
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    img[alt="team"]{
+        width: 50%;
+        height: 50%;
+    }
+
+}

@@ -1,0 +1,56 @@
+img[alt="avocado"],
+img[alt="sushis"],
+img[alt="brownie"],
+img[alt="apple"],
+img[alt="quinoa"] {
+    width: 30%;
+    position: absolute;
+    top: 7em;
+    left: 60em;
+    z-index: 1;
+}
+
+img[alt="toasts"],
+img[alt="ice-cream"],
+img[alt="cheese"],
+img[alt="potato"],
+img[alt="poke"],
+img[alt="otmeal"],
+img[alt="salad"] {
+    width: 30%;
+    position: absolute;
+    top: 20em;
+    left: 45em;
+}
+
+img[alt="pastas"],
+img[alt="waffles"],
+img[alt="eggs"],
+img[alt="spinach"],
+img[alt="no-cheese-burguer"],
+img[alt="cookies"],
+img[alt="pizza"] {
+    width: 30%;
+    position: absolute;
+    top: 30em;
+    left: 65em;
+    top: 15em;
+}
+
+img[alt="no-cheese-burguer"],
+img[alt="cookies"] {
+    position: absolute;
+    top: 30em;
+}
+
+img[alt="avocado"], img[alt="otmeal"]{
+    top:15em;
+}
+
+img[alt="toast"], img[alt="avocado"] {
+    transform: rotate(-20deg);
+}
+
+img[alt="pizza"] {
+    transform: rotate(30deg);
+}

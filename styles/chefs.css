@@ -1,0 +1,91 @@
+/* chefs */
+.chefs {
+    height: 50vh;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.chefs h1 {
+    font-size: 6vh;
+}
+
+#carousel {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 20s;
+}
+
+.chef {
+    position: relative;
+    top: -25vh;
+    width: 20%;
+    height: 70vh;
+    margin: 1.5%;
+    transition: all 3s 0s;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.chef:hover {
+    -webkit-box-reflect: below -60vh linear-gradient(transparent, white);
+    border-radius: 1000%;
+}
+
+.francis{
+    background-image: url(/assets/chefs/francis.png);
+}
+
+.gordon{
+    background-image: url(/assets/chefs/gordon.png);
+}
+
+.ferran{
+    background-image: url(/assets/chefs/ferran.png);
+}
+
+.cristeta{
+    background-image: url(/assets/chefs/cristeta.png);
+}
+
+.mariya{
+    background-image: url(/assets/chefs/mariya.png);
+}
+
+
+.francis:hover{
+    background-image: url(https://www.telegraph.co.uk/content/dam/food-and-drink/2017/07/26/mallmann-peaches_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwfSVWeZ_vEN7c6bHu2jJnT8.jpg);
+}
+
+.gordon:hover{
+    background-image: url(https://res.cloudinary.com/gordonramsay/image/upload/c_fill,w_1200,h_800,q_auto,f_auto/Gordon%20Ramsay%20Restaurants%20-%20NA/Food/gallery-scallops-rk-large_aw5wtx);
+}
+
+.ferran:hover{
+    background-image: url(https://i.pinimg.com/originals/48/de/22/48de2216a4e2509aa31fefef30b4429e.jpg);
+}
+
+.cristeta:hover{
+    background-image: url(https://images.agoramedia.com/everydayhealth/gcms/pg-04-white-house-recipes-lasagna-full.jpg?width=623);
+}
+
+.mariya:hover{
+    background-image: url(https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1d46c0aa-7657-4db2-97a2-820263355cf9_1024x768.webp);
+}
+
+@media (min-width:800px){
+    .chefs {
+        height: 60vh;
+        margin-top: -45%;
+    }
+     
+    .chefs h1 {
+        margin-bottom: 55px;
+    }
+}
+
+
+

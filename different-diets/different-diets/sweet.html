@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RanDoom-choose your meal!</title>
+  <link rel="icon" href="/assets/random-icon.png">
+  <link rel="icon" href="/assets/icons/random-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/styles/menu.css">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/hero.css">
+  <link rel="stylesheet" href="/styles/no-gluten.css">
+  <link rel="stylesheet" href="/styles/no-lactose.css">
+  <link rel="stylesheet" href="/styles/sweet.css">
+  <link rel="stylesheet" href="/styles/vegan.css">
+  <link rel="stylesheet" href="/styles/vegetarian.css">
+  <link rel="stylesheet" href="/styles/salty.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="stylesheet" href="/styles/chefs.css">
+  <link rel="stylesheet" href="/styles/aboutus.css">
+  <link rel="stylesheet" href="/styles/introrandom.css">
+  <link rel="stylesheet" href="/styles/healthy.css">
+  <link rel="stylesheet" href="/styles/randomize.css">
+  <link rel="stylesheet" href="/styles/images.css">
+  <link rel="stylesheet" href="/styles/randoms.css">
+</head>
+
+<body>
+  <header>
+    <header class="menu">
+      <nav class="nav container" id="nav">
+        <img class="nav_logo" src="/assets/menu/logo.png" alt="logo">
+        <ul class="nav_links">
+          <li class="nav_items">
+            <a id="link" href="/index.html">home</a>
+          </li>
+          <li class="nav_items">
+            <a id="link" href="/different-diets/different-diets/sweet.html">sweet</a>
+          </li>
+          <li class="nav_items">
+            <a id="link" href="/different-diets/different-diets/salty.html">salty</a>
+          </li> <!-- Hay error en salty html/CSS no lo encuentro -->
+          <li class="nav_items">
+            <a id="link" href="/different-diets/different-diets/vegetarian.html">vegetarian</a>
+          </li>
+          <li class="nav_items">
+            <a id="link" href="/different-diets/different-diets/no-gluten.html">no gluten</a>
+          </li>
+          <li class="nav_items">
+            <a id="link" href="/different-diets/different-diets/vegan.html">vegan</a>
+          </li>
+          <li class="nav_items">
+            <a id="link" href=""> <img src="/assets/menu/help.png" alt="help"></a>
+       </li>
+        </ul>
+        <!-- SONIDO BURGER-->
+        <a href="#nav" id="nav_burger">
+          <img src="/assets/menu/burger.png" class="nav_icon" alt="burger_icon">
+        </a>
+        <a href="#" class="nav_close">
+          <img src="/assets/menu/close.png" class="nav_icon" alt="close_icon">
+        </a>
+        <audio id="sound">
+          <source src="./assets/sound/eating-sound-effect-36186.mp3" type="audio/mp3" />
+        </audio>
+      </nav>
+
+      <div class="hero">
+        <div>
+          <h1>You have a sweet tooth?</h1>
+          <p>Our bodies use glucose as a primary fuel source, so our brains have evolved to like sweet foods. Consuming
+            sugar activates the mesolimbic dopamine system, which is the brain's reward system. Dopamine, the feel-good
+            chemical messenger, is then released and reinforces our desire for sugar.</p>
+        </div>
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+              <stop id="stop1" stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
+              <stop id="stop2" stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path fill="url(#sw-gradient)"
+            d="M19.3,-27.4C25.8,-25.8,32.4,-21.8,36.6,-15.8C40.8,-9.7,42.7,-1.7,40.2,4.8C37.7,11.2,31,16.1,24.8,19.5C18.7,22.9,13.3,24.9,7.7,26.8C2,28.8,-3.8,30.7,-8.1,28.9C-12.5,27.1,-15.4,21.4,-21.3,17.1C-27.1,12.7,-36.1,9.6,-36.8,5.2C-37.5,0.9,-30.1,-4.7,-25.1,-9.7C-20.1,-14.7,-17.5,-19,-13.8,-21.8C-10,-24.6,-5,-26,0.7,-27C6.4,-28.1,12.8,-29,19.3,-27.4Z"
+            width="100%" height="100%" transform="translate(50 50)" stroke-width="0"
+            style="transition: all 0.3s ease 0s" stroke="url(#sw-gradient)"></path>
+        </svg>
+        <img src="/assets/sweet/waffles.webp" class="food" alt="waffles" />
+        <img src="/assets/sweet/brownie.png" class="food" alt="brownie" />
+        <img src="/assets/sweet/ice-cream.png" class="food" alt="ice-cream" />
+      </div>
+    </header>
+    <main>
+      <section class="randoomize">
+        <div id="random-section">
+          <button class="button" onclick="generarComidaRandom()">
+            <p>RanDoomize!</p>
+            <p>pizza!</p>
+            <p>pasta!</p>
+            <p>salad!</p>
+            <p>sushi!</p>
+          </button>
+          <h1>HERE'S YOUR RANDOM RECIPE</h1>
+          <div id="contenedor-random"></div>
+          <a href="mailto:your-friend-email@mail.com">Share this recipe with your friends !</a>
+          <h2>Stock recipes:</h2>
+          <ul id="menu"></ul>
+          <h2>Done recipes:</h2>
+          <ul id="menu-pasado"></ul>
+          <h2>PLEASE ENTER A NEW RECIPE</h2>
+          <form id="formulario-comida">
+            <input type="text" id="nombre" placeholder="Recipe's name" required />
+            <br />
+            <textarea id="ingredientes" placeholder="Ingredients" required></textarea>
+            <br />
+            <textarea id="receta" placeholder="Recipe" required></textarea>
+            <br />
+            <button type="submit">Submit it!</button>
+            <img alt="pen" id="pen" src="https://navasjoyeros.com/media/catalog/product/cache/7c937fae69a6c569b0760f006decb923/4/0/405728_-_defi_bp_vintage.png">          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>©RanDoom 2023</p>
+    </footer>
+    <script src="/randoms/random-sweet.js"></script>
+    <script src="/javascript/magic-pen.js"></script>
+</body>
+
+</html>

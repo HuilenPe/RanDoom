@@ -1,0 +1,139 @@
+header{
+    box-shadow: 2px 2px 5px black;
+    z-index: 3;
+}
+/* ANIMATION MENU SHADOW */
+#link{
+    transition: all 1s 0s;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    color: var(--state-menu);
+    transition: all 1s 0s;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--black);
+}
+
+#link:hover {
+    transform: scale(1.1);
+    background-color: var(--white);
+    font-weight: bold;
+    border-bottom: solid 3px var(--black);
+}
+
+.container {
+    margin: 0 auto;
+    width: 92%;
+    max-width: 1200px;
+    overflow: hidden;
+    font-size: 1.2rem;  
+}
+
+.menu {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--white);
+    z-index: 3;
+}
+
+nav{
+    /* declaracion de custom properties */
+    --state-close:scale(0); /* se muestra */
+    --state-burger:scale(1); /* no se muestra */
+    --state-menu: translateY(-100%);
+    z-index: 3;
+
+    padding: 25px 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns:repeat(2, max-content);  
+}
+/* cuando apunte a.. */
+.nav:target{
+    --state-close:scale(1);
+    --state-burger:scale(0);
+    --state-menu:translateY(0)
+}
+/* LOGO RANDOMIZE */
+.nav_logo {
+    width: 200px;
+    z-index: 1;
+}
+/* BURGER MENU DEPLEGABLE */
+#nav_burger, .nav_close{
+    transition: .5s transform;
+    cursor: pointer;
+    grid-column: -2/-2;
+    grid-row: 1/2;
+} /* dos iconos en la misma celda de grid */
+
+#nav_burger{
+    transform: var(--state-burger);
+}
+
+.nav_close{
+    transform: var(--state-close); /* porque tiene scale en 0 */
+}
+
+.nav_icon{
+    width: 55px;
+}
+
+.nav_links{
+   background-color: var(--white);
+   position: absolute; /* para que salga de la grid */
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: 0;
+
+   display: grid;
+   align-content: center;
+   gap: 2em; /* espaciado de elementos */
+   padding-left: 5%;
+
+   transform: var(--state-menu);
+   transition: .6s transform;
+   
+}
+
+img[alt="help"]{
+    margin-top: -8px;;
+    width: 35px;
+    
+}
+
+@media (min-width:800px){
+    nav{
+        --state-burger:scale(0); /* burger no se ve en 0 */
+        --state-menu: translateY(0);
+    }
+
+    .nav:target{
+        --state-close:scale(0);/* que no se muestre el close icon */
+    }
+
+    .nav_links{
+        padding: 0;
+        margin-top: 25px; 
+        background-color: unset;
+        position: unset;
+        transform: unset;
+        gap: 1.5em; /* espaciado de elementos */
+
+        grid-auto-flow: column; /* para que se posicione horizontal */
+        grid-column: -2/-1;
+        grid-row:1/2;
+    }
+
+    #link{
+        font-size: .8em;
+        letter-spacing: normal;
+        text-transform: uppercase;
+    }
+}
+

@@ -1,0 +1,90 @@
+/* we introduce you random */
+.random {
+    overflow: hidden;
+}
+
+.random h1{
+    font-size: 6vh;
+    color: var(--black);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.random p{
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.random img{
+    margin-right: -25vh;
+    float: right;
+    z-index: -1;
+}
+
+.letters{
+    animation: letters 4s infinite;
+    font-size: 6vw;
+}
+
+@keyframes letters{
+    10%{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    20%{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    30%{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    40%{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    50%{
+        font-family:'Courier New', Courier, monospace;
+    }
+    60%{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    70%{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    80%{
+        font-family:'Times New Roman', Times, serif;
+    }
+    90%{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+@media (min-width:800px){
+    .random {
+        display: flex;  
+        flex-direction: row-reverse; 
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .random h1{
+        margin-top: 6%;
+        margin-bottom: 2%;
+        margin-left: 20%;
+    }
+
+    .random p{
+        margin-left: 30%;
+        margin-right: 10%;
+    }
+
+    .random img{
+        width: 50%;
+        
+    }
+
+    .letters{
+        font-size: 2vw;
+    }
+    
+}

@@ -1,0 +1,170 @@
+.hero {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    /* max-width: 1200px; */
+}
+
+.hero p{
+    padding: 5vh 10vh;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 15vw;
+    margin-top: 35px;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+}
+                                  
+img[alt="learn-more"], img[alt="arrow"]{
+    filter: invert(100);
+    position: absolute;
+    top: 122vw;
+    left: 4%;
+    width: 20%;
+    transition: all 2s 0s;  
+}
+
+.hover:hover{          
+    filter: invert(0);
+}
+    
+img[alt="learn-more"]{
+    animation: spin 3s ease-in-out infinite;
+}
+
+
+.food{
+    display: grid;
+    grid-template-columns:repeat(2, max-content);
+    align-items: center; 
+}
+
+img[alt="pasta"], img[alt="dish"]{
+    margin-left: 20%;
+    margin-top: -15%;
+    grid-column: -2/-2;
+    grid-row: 1/2;
+    
+}
+
+img[alt="pasta"]{
+    width: 70%;
+    z-index: 1;
+    grid-row: -2/2;
+    transform: rotate(1deg);
+    z-index: -1;
+}
+
+img[alt="dish"]{
+    width: 80%;
+    transform: rotate(10deg); 
+    z-index: -1;
+}
+
+img[alt="sushi"], img[alt="toast"]{
+    display: none;
+}
+.changing1{
+    visibility: visible;
+    position: absolute;
+    top: 5em;
+    left: 50%;
+    width: 100vh;
+    height: 100vh;
+
+    background-image: url(/assets/food/pasta.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    animation: change 20s ease-in-out 0s infinite;
+}
+
+@keyframes change {
+    10%{
+        background-image: url(/assets/food/pasta.png);
+    }
+    20%{
+        background-image: url(/assets/food/sushi.png);
+    }
+    30%{
+        background-image: url(/assets/food/toast.png);
+    }
+    40%{
+        background-image: url(/assets/no-lactose/poke.png);
+    }
+    50%{
+        background-image: url(/assets/no-gluten/quinoa.png);
+    }
+    60%{
+        background-image: url(/assets/no-gluten/otmeal.png);
+    }
+    70%{
+        background-image: url(/assets/sweet/ice-cream.png);
+    }
+    100%{
+        background-image: url(/assets/salty/toast.png);
+    }
+}
+
+@media (max-width:800px){
+    .changing1{
+        visibility: hidden;
+    }
+}
+
+@media (min-width:800px){
+    .hero {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .hero h1{
+        padding-right: 0;
+        font-size: 8vw;
+        margin-top: 35px;
+        margin-left: 30px;
+        margin-right: 20px;
+        text-align:center;
+    }
+
+    img[alt="pasta"], img[alt="dish"]{
+        vertical-align: center;
+        margin-left: 0;
+    }
+
+    img[alt="pasta"]{
+        width: 90%;
+        z-index: 1;
+        grid-row: 2/1;
+        transform: rotate(1deg);
+        visibility: hidden;
+    }
+
+    img[alt="dish"]{
+        grid-row: 1/1;
+        width: 170%;
+        transform: rotate(9deg); 
+        margin-top: 110px;
+    }
+
+    img[alt="learn-more"], img[alt="arrow"]{
+        top: 40vw;
+        width: 10%;
+        left: 20%;
+    }
+
+    
+    @keyframes spin{
+            from{
+                rotate: 0deg;
+            }
+            to {
+                rotate: 360deg;
+            }
+    }
+}

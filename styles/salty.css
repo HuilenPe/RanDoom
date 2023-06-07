@@ -1,0 +1,41 @@
+.salty-food h1{
+    font-size: 15vw;
+    margin-top: 35px;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+}
+
+.salty-food{
+    overflow: hidden;   
+}
+
+img[alt="toast"]{
+    width: 100%;
+    align-items: center;
+}
+
+@media (min-width:800px){
+    .salty-food{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .salty-food h1{
+        padding-right: 0;
+        font-size: 9vw;
+        margin-top: 35px;
+        margin-left: 30px;
+        margin-right: 20px;
+        text-align:center;
+    }
+    
+    img[alt="toast"]{
+        margin-top: 8%;
+        width: 85%;
+        transform: rotate(-15deg);
+    }
+
+}
+

@@ -1,0 +1,109 @@
+#random-section{
+    color: var(--white);
+    background-color: var(--black);
+    margin: 10vh;
+    border-radius: 10vh;
+    width: fit-content;
+    height: fit-content;
+    padding: 5%;
+    text-align: center;
+  }
+
+  #random-section a{
+    color: var(--white);
+    background-color: var(--black);
+    transition: all 1s 0s;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  #random-section a:hover{
+    color: var(--black);
+    background-color: var(--white);
+  }
+
+  #random-section h1{
+   font-size: x-large;
+   margin-bottom: -10vh;
+  }
+
+  #random-section h2{
+    margin-top: 10vh;
+   }
+
+#formulario-comida{
+    margin: 0 10vh 10vh 10vh;
+}
+
+#contenedor-random{
+    margin: 10vh;
+}
+
+#menu-pasado, #menu{
+    text-align: justify;
+    margin: 0 30%
+   }
+
+#nombre{
+    width: 50%;
+    height: 5vh;
+    border-radius: 10px;
+    margin: 3px;
+    border: none;
+    padding: 20px;
+}
+
+#ingredientes{
+    background-position: center center;
+    background-size: cover;
+    width: 80vh;
+    height: 30vh;
+    border: none;
+    background-image: url(https://png.pngtree.com/png-clipart/20221223/original/pngtree-stylish-ripped-torn-paper-texture-background-transparent-png-image_8797803.png);
+    margin: 3px;
+    padding: 3px 10vh;   
+}
+
+#receta{
+    rotate: 1deg;
+    background-image: url(https://cdn.shopify.com/s/files/1/2975/7054/products/TaskPlanner-Insert-A5-no-specs_1024x1024.png?v=1661790461);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    margin: 3px;
+    padding: 20px 30%;
+    border: none;
+}
+
+
+#receta, #ingredientes{
+    font-family: cursive;
+    font-size: larger;
+    color:var(--black);
+    background-color: var(--black);
+    background-repeat: no-repeat;
+    padding-top: 3vh;
+    transition: all 1s 0s;
+}
+
+button[type="submit"]{
+    width: 21vh;
+    height: 7vh;
+    border-radius: 3vh;
+    border: none;
+    background-color: var(--white);
+    margin: 1%;
+}
+
+#pen{
+    position: absolute;
+    left: 50%;
+    top:230vh;
+}
+
+@media (max-width:800px){
+    img[alt="pen"]{
+        visibility: hidden;
+    }
+}

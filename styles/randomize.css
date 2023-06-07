@@ -1,0 +1,76 @@
+
+.randoomize{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+}
+
+.button {
+    align-self: center;
+    width: 27vh;
+    height: 7vh;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 100px;
+    border: none;
+    color: var(--black);
+    font-size: larger;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.button p{
+    margin: 15px;
+}
+
+.button:hover{
+  box-shadow: -1px 6px 62px 0px rgba(0,0,0,0.75);
+}
+
+.button:hover p{
+    animation: cambiar 1s ease-in alternate;
+  }
+
+#contenedor-random li{
+    padding-top: 15px;
+}
+
+@keyframes cambiar{
+    0%{
+        transform: translateY(-21px)
+    }
+    20%{
+        transform: translateY(-42px)
+    }
+    40%{
+        transform: translateY(-63px)
+    }
+    50%{
+        transform: translateY(-84px)
+    }
+    60%{
+        transform: translateY(-105px)
+    }
+    70%{
+        transform: translateY(-126px)
+    }
+    80%{
+        transform: translateY(-147px)
+    }
+}
+
+@media (min-width:800px){
+    .randoomize{
+        display: flex;
+        justify-content: center;
+        margin-top: -750px;
+    }
+
+    .button{
+        width: 25%;
+    }
+
+}
